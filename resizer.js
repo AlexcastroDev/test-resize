@@ -21,7 +21,7 @@ function loadScript(url, callback) {
 
 window.onload = function() {
     loadScript("https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.1.1/iframeResizer.min.js", function() {
-        document.style.backgroundColor = 'red';
+        document.body.style.backgroundColor = 'red';
         const iframe = document.getElementsByTagName('iframe').at(0);
         if(iframe === undefined) return
         iFrameResize({ log: true }, iframe)
